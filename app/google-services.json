@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "428966770757",
+    "project_id": "etel4yourdoor",
+    "storage_bucket": "etel4yourdoor.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428966770757:android:3560e76946fb771b040b2c",
+        "android_client_info": {
+          "package_name": "com.example.etel4yourdoor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQvgGsn6y2SEI75_PGpFywi5XpXbyna-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Etel4YourDoor</string>
+    <string name="login">Belépés</string>
+    <string name="username">Felhasználónév</string>
+    <string name="password">Jelszó</string>
+    <string name="register">Regisztráció</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password_again">Jelszó mégegyszer</string>
+    <string name="Return">Mégse</string>
+    <string name="leiras">TODO: Valami ételes kép</string>
+    <string name="slogan">Etel4YourDoor</string>
+    <string name="bejel">Bejelentkezés</string>
+    <string name="vissza">Vissza</string>
+    <string name="email_addr">E-mail Cím</string>
+    <string name="signout">Kijelentkezés</string>
+</resources>

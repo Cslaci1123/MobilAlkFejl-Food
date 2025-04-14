@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:labelFor="@+id/editTextUsername"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:autofillHints="username"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:labelFor="@+id/editTextEMail"
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e_mail" />
+
+    <EditText
+        android:id="@+id/editTextEMail"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:autofillHints="emailAddress"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:labelFor="@+id/editTextPassword"
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:labelFor="@+id/editTextPasswordAgain"
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_again" />
+
+    <EditText
+        android:id="@+id/editTextPasswordAgain"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/returnButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Return"
+            android:onClick="returnPage"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:onClick="registerUser" />
+    </LinearLayout>
+
+</LinearLayout>
