@@ -16,7 +16,6 @@ import com.google.firebase.auth.FirebaseAuth;
 
 
 public class RegistrationActivity extends AppCompatActivity {
-    EditText ETUserName;
     EditText ETEmail;
     EditText ETPassword;
     EditText ETPasswordConfirm;
@@ -28,7 +27,6 @@ public class RegistrationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-        ETUserName = findViewById(R.id.editTextUsername);
         ETEmail = findViewById(R.id.editTextEMail);
         ETPassword = findViewById(R.id.editTextPassword);
         ETPasswordConfirm = findViewById(R.id.editTextPasswordAgain);
@@ -45,10 +43,19 @@ public class RegistrationActivity extends AppCompatActivity {
 
     public void registerUser(View view) {
 
-        String userName = ETUserName.getText().toString();
         String email = ETEmail.getText().toString();
         String password = ETPassword.getText().toString();
         String passwordConfirm = ETPasswordConfirm.getText().toString();
+
+        if (email.isEmpty() || passwordConfirm.isEmpty() || password.isEmpty()){
+            Toast.makeText(this, "Kérlek töltsd ki az összes mezőt", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (password.length()<6){
+            Toast.makeText(this, "A jelszó legyen legalább 6 karakter", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
         if (password.equals(passwordConfirm)){
             auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {

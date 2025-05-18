@@ -57,6 +57,11 @@ public class LoginActivity extends AppCompatActivity {
         String userName = ETUserName.getText().toString();
         String password = ETPassword.getText().toString();
 
+        if (userName.isEmpty() || password.isEmpty()) {
+            Toast.makeText(this, "Kérlek töltsd ki az összes mezőt", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         auth.signInWithEmailAndPassword(userName,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -91,4 +96,5 @@ public class LoginActivity extends AppCompatActivity {
     public void returnToMain(View view) {
         finish();
     }
+
 }

@@ -22,20 +22,6 @@
             android:textAlignment="center"
             android:textSize="24sp" />
 
-        <TextView
-            android:labelFor="@+id/editTextUsername"
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/username" />
-
-        <EditText
-            android:id="@+id/editTextUsername"
-            android:layout_width="match_parent"
-            android:layout_height="53dp"
-            android:autofillHints="username"
-            android:ems="10"
-            android:inputType="text" />
 
         <TextView
             android:labelFor="@+id/editTextEMail"

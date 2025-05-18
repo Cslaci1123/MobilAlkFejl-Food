@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Etel4YourDoor</string>
+    <string name="app_name">E4YD</string>
     <string name="login">Belépés</string>
     <string name="username">Felhasználónév</string>
     <string name="password">Jelszó</string>
@@ -13,4 +13,8 @@
     <string name="vissza">Vissza</string>
     <string name="email_addr">E-mail Cím</string>
     <string name="signout">Kijelentkezés</string>
+    <string name="kosarba">Kosárba</string>
+    <string name="kosar_tartalma">Kosár tartalma</string>
+    <string name="hely_betolt">Hely betöltése...</string>
+    <string name="kosar">Kosár</string>
 </resources>
